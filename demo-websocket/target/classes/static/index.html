@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Example</title>
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link href="css/coreStyle.css" rel="stylesheet">
+    
+    <script src="js/node_modules/angular/angular.js"></script>
+    <script src="js/node_modules/angular-route/angular-route.js"></script>
+    <script src="js/node_modules/angular-websocket/dist/angular-websocket.js"></script>
+    
+    <script src="js/core/app.js"></script>
+    <script src="js/core/constants.js"></script>
+        
+    <script src="js/core/routes.js"></script>
+    
+    <script src="js/domain/count/CountController.js"></script>
+    <script src="js/domain/count/CountService.js"></script>   
+     
+    <script src="js/domain/chat/ChatController.js"></script>
+    <script src="js/domain/chat/ChatService.js"></script>
+    
+    
+</head>
+<body>
+	<ng-view></ng-view>
+</body>
+</html>

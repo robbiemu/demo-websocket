@@ -1,0 +1,28 @@
+<div class="container-fluid imagePanel">
+	<div class="row" style="height: 100vh">
+		<div class="col-md-6 col-md-offset-3 buttonPanel">
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-md-4 col-md-offset-4">
+					<label for="username">User<input id="username" ng-model="ctrl.msg.username" name="username" type="text" /></label>
+					<label for="message">Message<input ng-model="ctrl.msg.message" name="message" type="text" /></label>
+					<button class="btn btn-success" style="width: 100%" ng-click="ctrl.message()">Send Message!</button>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-md-4 col-md-offset-4">
+					<button class="btn btn-warning" style="width: 100%" ng-click="ctrl.close()">Close Websocket</button>
+				</div>
+			</div>
+			<div class="row" id="chatlog">
+				<div class="col-md-4 col-md-offset-4">
+					<h3>Chat log:</h3>
+					<ul>
+						<div ng-repeat="line in ctrl.log.split('\n').reverse() track by $index">
+							<li>{{line}}</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,28 @@
+
+.imagePanel
+{
+	height: 100vh;
+	width: 100vw;
+	background: url(../img/bloons.jpg) no-repeat center center fixed;
+}
+
+.buttonPanel
+{
+	height: 60vh;
+	margin-top: 15vh;
+	border-radius: 25px;
+    background: #4368f7;
+	box-shadow: 10px 10px 5px #888888; 
+}
+
+ul {
+	list-style:none;
+	background-color: rgba(255,255,255,0.5);
+	min-height: 1em;
+	border-radius: 0.2em;
+}
+
+#chatlog {
+	max-height: 16em;
+	overflow-y:scroll
+}
