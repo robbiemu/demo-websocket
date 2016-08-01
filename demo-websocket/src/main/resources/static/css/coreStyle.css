@@ -15,14 +15,31 @@
 	box-shadow: 10px 10px 5px #888888; 
 }
 
-ul {
-	list-style:none;
-	background-color: rgba(255,255,255,0.5);
-	min-height: 1em;
-	border-radius: 0.2em;
-}
-
 #chatlog {
 	max-height: 16em;
 	overflow-y:scroll
+}
+
+#chatlog > div {
+		margin: 0 1em;
+		width: 97%;
+}
+
+#chatlog > div > h3 {
+    display: inline-block;
+    text-align: center;
+    width: 97%;
+}
+
+ul {
+	min-height: 11em;
+	list-style:none;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 0.2em;
+	padding-right: 2em;
+}
+
+ul > li {
+	text-overflow: elipses;
+	overflow-x: wrap;
 }
