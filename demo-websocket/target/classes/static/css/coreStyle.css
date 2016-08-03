@@ -40,6 +40,16 @@ ul {
 }
 
 ul > li {
-	text-overflow: elipses;
-	overflow-x: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    
+    overflow-x: wrap;
+	
+	word-break: break-word;
+
+/* These are not supported at all in Chrome */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }

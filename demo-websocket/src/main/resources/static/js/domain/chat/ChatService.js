@@ -7,7 +7,7 @@ angular.module('app').service('ChatService',
 	
 	var service = this;
 		
-	service.dataStream = $websocket('ws://10.160.113.167:8080/message');
+	service.dataStream = $websocket('ws://localhost:8080/message');
 	
     this.message = function(msg) {
     	cmd = {username: msg.username, message: msg.message}
